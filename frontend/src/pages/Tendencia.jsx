@@ -58,7 +58,7 @@ function Tendencia() {
 
       {/* Filtros */}
       <div className="card" style={{ marginBottom: "1.5rem" }}>
-        <div className="filtros-row" style={{ marginBottom: 0 }}>
+        <div className="filtros-row" style={{ marginBottom: 0, flexDirection: "column", gap: "1rem" }}>
 
           <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
             <span className="filtros-label">Estado</span>
@@ -120,7 +120,7 @@ function Tendencia() {
             <div className="card-title" style={{ marginBottom: "1rem" }}>
               Tasas delictivas — {estadoSel} ({añoSel})
             </div>
-            <ResponsiveContainer width="100%" height={280}>
+            <ResponsiveContainer width="100%" height={window.innerWidth < 480 ? 200 : 250}>
               <BarChart data={delitosMostrar.map((d) => ({
                 delito: d.label,
                 valor:  datosFiltrados[0]?.[d.key] ?? 0,
@@ -170,7 +170,7 @@ function Tendencia() {
                   <div className="card-title" style={{ marginBottom: "1rem" }}>
                     {d.label} — {estadoSel}
                   </div>
-                  <ResponsiveContainer width="100%" height={230}>
+                  <ResponsiveContainer width="100%" height={window.innerWidth < 480 ? 200 : 230}>
                     <LineChart data={tendencia.datos}>
                       <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
                       <XAxis dataKey="Año" />
@@ -187,7 +187,7 @@ function Tendencia() {
                 <div className="card-title" style={{ marginBottom: "1rem" }}>
                   Comparativa de los 3 delitos — {estadoSel}
                 </div>
-                <ResponsiveContainer width="100%" height={230}>
+                <ResponsiveContainer width="100%" height={window.innerWidth < 480 ? 200 : 230}>
                   <LineChart data={tendencia.datos}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
                     <XAxis dataKey="Año" />
