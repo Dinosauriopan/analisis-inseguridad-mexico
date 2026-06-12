@@ -62,7 +62,7 @@ function WebScraping() {
 
   return (
     <div>
-      <h1 className="section-title">🌐 Validación con Web Scraping</h1>
+      <h1 className="section-title">Datos con Web Scraping</h1>
 
       {/* Info banner */}
       <div style={{

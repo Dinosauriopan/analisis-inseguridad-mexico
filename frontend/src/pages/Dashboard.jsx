@@ -62,7 +62,7 @@ function Dashboard() {
           <div className="card-title" style={{ marginBottom: "1rem" }}>
             Tasa promedio de Homicidio Doloso por año
           </div>
-          <ResponsiveContainer width="100%" height={260}>
+          <ResponsiveContainer width="100%" height={window.innerWidth < 480 ? 200 : 260}>
             <LineChart data={resumen}>
               <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
               <XAxis dataKey="Año" />
@@ -85,7 +85,7 @@ function Dashboard() {
           <div className="card-title" style={{ marginBottom: "1rem" }}>
             Tasa promedio de Robo por año
           </div>
-          <ResponsiveContainer width="100%" height={260}>
+          <ResponsiveContainer width="100%" height={window.innerWidth < 480 ? 200 : 260}>
             <BarChart data={resumen}>
               <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
               <XAxis dataKey="Año" />
@@ -101,7 +101,7 @@ function Dashboard() {
           <div className="card-title" style={{ marginBottom: "1rem" }}>
             Tasa promedio de Feminicidio por año
           </div>
-          <ResponsiveContainer width="100%" height={260}>
+          <ResponsiveContainer width="100%" height={window.innerWidth < 480 ? 200 : 260}>
             <LineChart data={resumen}>
               <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
               <XAxis dataKey="Año" />
@@ -124,7 +124,7 @@ function Dashboard() {
           <div className="card-title" style={{ marginBottom: "1rem" }}>
             Comparativa de tasas por año
           </div>
-          <ResponsiveContainer width="100%" height={260}>
+          <ResponsiveContainer width="100%" height={window.innerWidth < 480 ? 200 : 260}>
             <BarChart data={resumen}>
               <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
               <XAxis dataKey="Año" />

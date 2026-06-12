@@ -67,7 +67,7 @@ function MapaRiesgo() {
 
   return (
     <div>
-      <h1 className="section-title">🗺️ Mapa de Zonas de Riesgo — México</h1>
+      <h1 className="section-title">Mapa de Zonas de Riesgo — México</h1>
 
       {/* Leyenda */}
       <div style={{ display: "flex", gap: "1.5rem", marginBottom: "1rem", flexWrap: "wrap" }}>
@@ -95,7 +95,7 @@ function MapaRiesgo() {
       {/* Mapa */}
       <div className="card" style={{ position: "relative", padding: "1rem" }}>
         <div style={{ fontSize: "0.8rem", color: "#888", marginBottom: 8 }}>
-          💡 Puedes hacer zoom y arrastrar el mapa
+          Puedes hacer zoom y arrastrar el mapa
         </div>
 
         <ComposableMap
