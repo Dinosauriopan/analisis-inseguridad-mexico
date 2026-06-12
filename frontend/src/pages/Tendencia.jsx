@@ -58,7 +58,11 @@ function Tendencia() {
 
       {/* Filtros */}
       <div className="card" style={{ marginBottom: "1.5rem" }}>
-        <div className="filtros-row" style={{ marginBottom: 0, flexDirection: "column", gap: "1rem" }}>
+        <div className="filtros-row" style={{ 
+            marginBottom: 0,
+            flexDirection: window.innerWidth < 768 ? "column" : "row",
+            gap: "1rem" 
+          }}>
 
           <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
             <span className="filtros-label">Estado</span>
