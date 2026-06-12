@@ -204,6 +204,7 @@ function WebScraping() {
           ))}
         </div>
 
+        <div style={{ overflowX: "auto", WebkitOverflowScrolling: "touch" }}>
         <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.88rem" }}>
           <thead>
             <tr style={{ background: "#1F3864", color: "#fff" }}>
@@ -253,6 +254,7 @@ function WebScraping() {
             ))}
           </tbody>
         </table>
+        </div>
         <div style={{ marginTop: "0.8rem", fontSize: "0.8rem", color: "#888" }}>
           Fuente K-Means: SESNSP / INEGI · Fuente Índices: Numbeo.com
         </div>

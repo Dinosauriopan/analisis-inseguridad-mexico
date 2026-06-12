@@ -123,6 +123,7 @@ function Kmeans() {
           ))}
         </div>
 
+        <div style={{ overflowX: "auto", WebkitOverflowScrolling: "touch" }}>
         <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.9rem" }}>
           <thead>
             <tr style={{ background: "#1F3864", color: "#fff" }}>
@@ -150,6 +151,7 @@ function Kmeans() {
             ))}
           </tbody>
         </table>
+        </div>
 
         <div style={{ marginTop: "0.8rem", fontSize: "0.8rem", color: "#888" }}>
           Mostrando {datosFiltrados.length} de {datos.length} estados
