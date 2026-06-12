@@ -6,6 +6,8 @@
   padding: 0 2rem;
   height: 60px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .navbar-brand {
@@ -27,16 +29,18 @@
 
 .navbar-links {
   display: flex;
-  gap: 8px;
+  gap: 4px;
+  flex-wrap: wrap;
 }
 
 .nav-link {
   color: #a8c4e0;
   text-decoration: none;
-  padding: 6px 16px;
+  padding: 6px 12px;
   border-radius: 6px;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
 }
 
 .nav-link:hover {
@@ -48,4 +52,36 @@
   background-color: #2E75B6;
   color: #ffffff;
   font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;
+    padding: 0.75rem 1rem;
+  }
+
+  .navbar-title {
+    font-size: 0.85rem;
+  }
+
+  .navbar-links {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav-link {
+    font-size: 0.78rem;
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-title {
+    font-size: 0.75rem;
+  }
+
+  .nav-link {
+    font-size: 0.72rem;
+    padding: 4px 8px;
+  }
 }
