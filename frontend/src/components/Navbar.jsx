@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-        <span className="navbar-logo">🛡️</span>
+        <span className="navbar-logo"></span>
         <span className="navbar-title">Inseguridad en México 2020–2025</span>
       </div>
       <div className="navbar-links">
