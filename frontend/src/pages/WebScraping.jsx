@@ -176,9 +176,6 @@ function WebScraping() {
               <Legend />
             </ScatterChart>
           </ResponsiveContainer>
-          <div style={{ fontSize: "0.78rem", color: "#888", marginTop: 8 }}>
-            Si los puntos rojos (Riesgo Alto) aparecen arriba a la derecha, el modelo es consistente con Numbeo.
-          </div>
         </div>
 
       </div>
